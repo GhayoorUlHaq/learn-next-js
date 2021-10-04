@@ -1,10 +1,12 @@
 import Layout from "../../../components/Layout";
 import Link from 'next/link'
 import { server } from '../../../config'
+import Meta from '../../../components/Meta';
 
 const article = ({article}) => {
     return (
         <Layout>
+            <Meta title={article?.title} description={article?.body}/>
             <div>
                 <h3>{article?.title}</h3>
                 <p>{article?.body}</p>

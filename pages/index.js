@@ -4,16 +4,9 @@ import Articles from "../components/Articles";
 import { server } from '../config'
 
 export default function Home({articles}) {
-    console.log(articles)
   return (
       <Layout>
           <div>
-              <Head>
-                  <title>
-                      Ghayoor
-                  </title>
-                  <meta/>
-              </Head>
               <h1>Enjoy the articles</h1>
               <Articles articles={articles}  />
           </div>

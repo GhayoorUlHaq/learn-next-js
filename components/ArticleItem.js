@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import articleStyles from '../styles/Articles.module.css'
+import Meta from "./Meta";
 
 const ArticleItem = ({ article }) => {
     return (
